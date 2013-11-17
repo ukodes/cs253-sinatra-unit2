@@ -19,3 +19,9 @@ def rot13(s)
   s.tr("A-MN-Za-mn-z", "N-ZA-Mn-za-m")
 end
 
+helpers do 
+  def h(s)
+    Rack::Utils.escape_html s
+  end
+end
+
